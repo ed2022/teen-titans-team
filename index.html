@@ -4,11 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <section class="section has-background-primary">
+        <div class="container">
+            <h1 class="title is-1 has-text-white">Movie Findr</h1>
+            <div class="block">
+                <div class="field has-addons">
+                    <p class="control">
+                        <div class="select">
+                            <select id="genre-list">
+                            <option value= 28>Action</option>
+                            <option value=12>Adventure</option>
+                            <option value=16>Animation</option>
+                            <option value=35>Comedy</option>
+                            <option value=99>Documentary</option>
+                            <option value=18>Drama</option>
+                            <option value=10751>Family</option>
+                            <option value=14>Fantasy</option>
+                            <option value=36>History</option>
+                            <option value=27>Horror</option>
+                            <option value=10402>Music</option>
+                            <option value=9648>Mystery</option>
+                            <option value=10749>Romance</option>
+                            <option value=878>Science Fiction</option>
+                            <option value=10770>TV Movie</option>
+                            <option value=53>Thriller</option>
+                            <option value=10752>War</option>
+                            <option value=37>Western</option>
+                            </select>
+                        </div>
+                    </p>
+                    <p class="control">
+                        <input id="submit-genre" class="button" type="submit" value="Find a Movie!">
+                    </p>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <section class="is-large has-background-primary">
+        <div class="container">
+            <div class="block">
+                <div class="card">
+                    <div class="columns">
+                        <div class="column">
+                            <div class="card-image">
+                            <figure class="image is-2by3">
+                                <img id="movie-poster" src="" alt="Placeholder image">
+                            </figure>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card-content">
+                                <p class="title is-2" id="movie-name"></p> 
+                                <p class="title is-4">Summary</p>                       
+                                <div class="content" id="movie-description"> 
+                                </div>
+                                <div class="content">
+                                    Original Language:
+                                    <span id="movie-language"></span>
+                                </div>
+                                <div class="content" id="movie-release-date"> 
+                                </div>
+                                <div class="content" id="movie-rating"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer-item">
+                            <button class="button" id="previous-movie">Previous Movie</button>
+                        </div>
+                        <div class="card-footer-item">
+                            <button class="button">lemme get this movie</button>
+                        </div>
+                        <div class="card-footer-item">
+                            <button class="button" id="next-movie">Next Movie</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
